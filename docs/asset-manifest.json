@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/devjokes/static/css/main.47b66e83.css",
+    "main.js": "/devjokes/static/js/main.0f53abfd.js",
+    "index.html": "/devjokes/index.html",
+    "main.47b66e83.css.map": "/devjokes/static/css/main.47b66e83.css.map",
+    "main.0f53abfd.js.map": "/devjokes/static/js/main.0f53abfd.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.47b66e83.css",
+    "static/js/main.0f53abfd.js"
+  ]
+}
