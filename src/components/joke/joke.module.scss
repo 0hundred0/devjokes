@@ -7,10 +7,17 @@
     padding: 2rem;
     border-radius: 5px;
     background-color: $blue;
+		display: flex;
+		flex-flow: column;
 }
 
 .question {
-    margin-bottom: 3rem;
+  margin-bottom: 3rem;
 }
 
 .punchline {font-weight: 400;}
+
+.loading {
+	justify-self: center;
+	align-self: center;
+}

@@ -1,16 +1,21 @@
-import AppState from "./context/AppState";
 import Header from "./components/header/Header";
 import Joke from "./components/joke/Joke";
 import Footer from "./components/footer/Footer";
+import {QueryClient, QueryClientProvider} from '@tanstack/react-query';
+
 function App() {
+	const client = new QueryClient({defaultOptions: {
+		queries: {refetchOnWindowFocus: false}
+	}});
+
   return (
-    <AppState>
+    <QueryClientProvider client={client}>
       <div className="App">
         <Header />
         <Joke />
         <Footer />
       </div>
-    </AppState>
+    </QueryClientProvider>
   );
 }
 
