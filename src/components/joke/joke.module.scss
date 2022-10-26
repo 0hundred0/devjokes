@@ -1,14 +1,27 @@
 @import '../../styles/abstracts/abstracts.scss';
 
 .box {
-    max-width: 100%;
-    width: 40rem;
-    margin: 10rem auto 2rem;
-    padding: 2rem;
-    border-radius: 5px;
-    background-color: $blue;
-		display: flex;
-		flex-flow: column;
+	position: relative;
+	max-width: 100%;
+	width: 40rem;
+	margin: 10rem auto 2.5rem;
+	padding: 2rem 1.5rem;
+	border-radius: 0.7rem;
+	display: flex;
+	flex-flow: column;
+	background-color: $black;
+
+	&::after {
+		content: '';
+		height: 103%;
+		width: 40.5rem;
+		max-width: 101%;
+		@include absoluteCenter;
+		border-radius: 0.8rem;
+		z-index: -1;
+		animation: saturateBox 5s ease-in infinite alternate-reverse;
+		background-image: linear-gradient(120deg, $purple, $red);
+	}
 }
 
 .question {
@@ -18,6 +31,13 @@
 .punchline {font-weight: 400;}
 
 .loading {
+	margin-top: 10rem;
 	justify-self: center;
 	align-self: center;
+	text-align: center;
+}
+
+@keyframes saturateBox {
+	from  {filter: saturate(1);}
+	to {filter: saturate(2);}
 }

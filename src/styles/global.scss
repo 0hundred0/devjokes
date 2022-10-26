@@ -36,13 +36,13 @@ body {
 	&-default {
 			padding: 0.7rem 0.9rem;
 			margin-top: 1rem;
-			background-color: $orange;
+			background-image: linear-gradient(45deg, $purple, $red);
 			border-radius: 3px;
 			transition: all 0.15s ease;
 			cursor: pointer;
 			&:hover {
 					color: darken($white, 7);
-					background-color: darken($orange, 7);
+					filter: saturate(2);
 			}
 	}
 }
